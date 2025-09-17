@@ -41,3 +41,10 @@ const defaultFilms: Film[] = [
   },
 
 ];
+
+router.get("/", (_req, res) => {
+  return res.json(defaultFilms);
+});
+
+
+export default router;
